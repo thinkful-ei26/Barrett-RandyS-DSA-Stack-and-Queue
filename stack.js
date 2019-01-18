@@ -53,7 +53,6 @@ function display(stack) {
 
 function is_palindrome(s) {
   s = s.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
-  // your code goes here
   const stack = new Stack();
   const reverseStack = new Stack();
   for (let i = 0; i < s.length; i++) {
@@ -78,10 +77,45 @@ function is_palindrome(s) {
 }
 
 // true, true, true
-console.log(is_palindrome("dad"));
-console.log(is_palindrome("A man, a plan, a canal: Panama"));
-console.log(is_palindrome("1001"));
-console.log(is_palindrome("Tauhida"));
+// console.log(is_palindrome("dad"));
+// console.log(is_palindrome("A man, a plan, a canal: Panama"));
+// console.log(is_palindrome("1001"));
+// console.log(is_palindrome("Tauhida"));
+
+// function matchingParentheses(expression) {
+//   //take an aritmetic expression
+//   //if expression has an extra close, return location of extra close
+//   //if express has extra open, return location of open
+
+//   const stack = new Stack();
+//   for (let i = 0; i < expression.length; i++) {
+//     stack.push(expression[i])
+//   }
+  
+//   //keep track of open ps
+//   let openParenthesis = 0;
+//   let closedParenthesis = 0;
+//   let node = stack.top
+
+//   while(node.next !== null) {
+//     console.log(node.data)
+//     node = node.next
+//     if(node.data === '('){
+//       openParenthesis++
+//     } else if (node.data === ')') {
+//       closedParenthesis++
+//     }
+//   }
+//   if (openParenthesis !== closedParenthesis){
+//     return 'Missing a parenthesis'
+//   } else {
+//     console.log('open', openParenthesis)
+//     console.log('closed', closedParenthesis)
+//     return 'true'
+//   }
+// }
+
+console.log(matchingParentheses("1+(1+2))"));
 
 function main() {
   const starTrek = new Stack();
