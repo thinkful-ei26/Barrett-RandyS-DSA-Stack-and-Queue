@@ -31,23 +31,23 @@ class Stack {
 
 function peek(stack) {
   if (stack.top===null){
-    console.log('stack is empty')
-    return null
+    console.log('stack is empty');
+    return null;
   }
 
-  const node = stack.top
-  return node.data
+  const node = stack.top;
+  return node.data;
 } 
 
 function display(stack) {
   if (stack.top===null){
-    console.log('stack is empty')
-    return null
+    console.log('stack is empty');
+    return null;
   }
-  let node = stack.top
+  let node = stack.top;
   while(node!==null) {
-    console.log(node.data)
-    node = node.next
+    console.log(node.data);
+    node = node.next;
   }
 }
 
@@ -115,7 +115,7 @@ function is_palindrome(s) {
 //   }
 // }
 
-console.log(matchingParentheses("1+(1+2))"));
+// console.log(matchingParentheses("1+(1+2))"));
 
 function main() {
   const starTrek = new Stack();
@@ -130,3 +130,4 @@ function main() {
 }
 
 // console.log(main());
+module.exports = Stack;
